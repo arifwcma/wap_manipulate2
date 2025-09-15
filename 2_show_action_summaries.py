@@ -1,6 +1,6 @@
 import pandas as pd
 
-csv_path = r"arcgis/data\Master2.csv"
+csv_path = r"qgis/data\Master2.csv"
 field_name = "Action "
 
 df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)

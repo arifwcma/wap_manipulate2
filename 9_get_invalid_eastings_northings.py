@@ -6,7 +6,7 @@ def extract_first_number_6_or_more_digits(s):
     m = re.search(r"\d{6,}", s)
     return m.group(0) if m else None
 
-df = pd.read_csv("arcgis/data/Master6.csv")
+df = pd.read_csv("qgis/data/Master6.csv")
 parsed = df["Northing GDA 94  (start of works only)"].apply(extract_first_number_6_or_more_digits)
 df["Parsed Northing"] = parsed
 bad = df.loc[parsed.isna() | (parsed.str.len() != 7), ["New Site Code", "Parsed Northing", "Northing GDA 94  (start of works only)"]]

@@ -1,6 +1,6 @@
 import pandas as pd
 
-input_path = r"arcgis/data\Master3.csv"
+input_path = r"qgis/data\Master3.csv"
 output_ok = r"data\Master4_ok.csv"
 output_bad = r"data\Master4_bad.csv"
 

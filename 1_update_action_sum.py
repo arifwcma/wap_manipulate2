@@ -2,8 +2,8 @@ import pandas as pd
 import os
 import tempfile
 
-csv_path = r"arcgis/data\Master.csv"
-output_path = r"arcgis/data\Master2.csv"
+csv_path = r"qgis/data\Master.csv"
+output_path = r"qgis/data\Master2.csv"
 field_name = "Action "
 
 mapping = {
