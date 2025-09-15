@@ -7,7 +7,7 @@ def extract_first_number_6_or_more_digits(s):
     m = re.search(r"\d{6,}", s)
     return float(m.group(0)) if m else None
 
-df = pd.read_csv("data/Master5.csv")
+df = pd.read_csv("arcgis/data/Master5.csv")
 
 def fix_easting(val):
     s = str(val).replace(",", "")

@@ -2,7 +2,7 @@ import pandas as pd
 import re
 from pyproj import Transformer
 
-df = pd.read_csv("data/Master2.csv")
+df = pd.read_csv("arcgis/data/Master2.csv")
 dest = "data/Master3.csv"
 transformer = Transformer.from_crs("EPSG:28354", "EPSG:4326", always_xy=True)
 

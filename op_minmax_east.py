@@ -6,7 +6,7 @@ def extract_first_number(s):
     m = re.search(r"\d+", s)
     return float(m.group(0)) if m else None
 
-df = pd.read_csv("data/Master6.csv")
+df = pd.read_csv("arcgis/data/Master6.csv")
 
 eastings = df["Easting GDA 94"].apply(extract_first_number)
 northings = df["Northing GDA 94"].apply(extract_first_number)
